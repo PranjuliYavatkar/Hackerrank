@@ -1,3 +1,5 @@
+//Minimum number of increments to make all array elements equal
+
 import java.util.*;
 
 public class Program1 {
@@ -5,19 +7,19 @@ public class Program1 {
          
         Scanner sc= new Scanner(System.in);
         List<Integer> intList= new ArrayList<Integer>();
-        /*while(sc.hasNextInt()){
+        System.out.println("Enter array elements followed by a non integer");
+        while(sc.hasNextInt()){
             intList.add(sc.nextInt());
-        }*/
-        intList.add(5);
+        /*intList.add(5);
         intList.add(6);
         intList.add(7);
-        intList.add(8);
+        intList.add(8);*/
         /*for(int i: intList){
             System.out.print(i + " ");
         }*/
         System.out.println();
         
-        System.out.println(count(intList));
+        System.out.println("Minimum number of increments are" + count(intList));
      }
      
      public static int count(List<Integer> intList ){
